@@ -1,9 +1,4 @@
-I'll examine your project structure and dependencies, then create a professional, attractive README for GitHub.
-
-Now I'll create a professional, attractive README.md for your GitHub repository:
-
-```markdown
-# 🏦 ParaBank Cucumber BDD Framework
+🏦 **ParaBank Cucumber BDD Framework**
 
 A comprehensive **Behavior-Driven Development (BDD)** test automation framework for the ParaBank application using **Cucumber 7**, **Selenium 4**, and **Java 17**.
 
@@ -281,18 +276,12 @@ Contributions are welcome! Please:
 4. Push to the branch (`git push origin feature/YourFeature`)
 5. Open a Pull Request
 
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the LICENSE file for details.
 
 ---
 
 ## 👤 Author
-
-**Your Name**  
-🔗 [GitHub](https://github.com/yourusername) | [LinkedIn](https://linkedin.com/in/yourprofile)
+ 
+🔗 [GitHub](https://github.com/DharmarajKarthik) | [LinkedIn](https://linkedin.com/in/dharmaraj-govindhasamy)
 
 ---
 
@@ -306,30 +295,10 @@ Please consider giving it a ⭐ star on GitHub! Your feedback and contributions 
 
 For issues, questions, or suggestions:
 - Open an **Issue** on GitHub
-- Email: your.email@example.com
+- Email: dharmarajkarthik123@gmail.com
 - Create a **Discussion** in the repository
 
 ---
 
 **Happy Testing! 🚀**
 ```
-
----
-
-Now create this file in your project root. To save it:
-
-1. Create a file named `README.md` in your project root (`C:\Users\DharmarajG\IdeaProjects\ParaBank_CucumberBDD_Framework\`)
-2. Copy/paste the markdown content above into it
-3. Customize the placeholders:
-   - Replace `yourusername` with your actual GitHub username
-   - Replace `Your Name` with your name
-   - Update links and contact info
-
-Or I can show you how to add additional sections like:
-- Performance benchmarks
-- CI/CD pipeline integration (GitHub Actions)
-- Docker setup
-- Video tutorials link
-- Known issues & roadmap
-
-Would you like me to enhance any section or add more details to the README?
