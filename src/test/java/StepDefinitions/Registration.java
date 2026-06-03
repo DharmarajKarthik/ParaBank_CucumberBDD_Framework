@@ -7,12 +7,14 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.List;
 import java.util.Properties;
 
 
@@ -69,7 +71,19 @@ public class Registration {
 
         boolean successMessageDisplayed = driver.findElement(By.xpath("//p[contains(text(), 'Your account was created successfully. You are now logged in.')]")).isDisplayed();
         Assert.assertEquals(successMessageDisplayed, true);
+    }
 
+    @When("I leave registration details empty")
+    public void i_leave_registration_details_empty() {
 
+        registerPage.clickRegisterButton();
+
+    }
+
+    @Then("I should see a the error message for the missing fields")
+    public void i_should_see_a_the_error_message_for_the_missing_fields() {
+
+       List<WebElement> errorsdisplayed = driver.findElements(By.xpath("//span[@class='error']"));
+        Assert.assertFalse("No validation errors displayed", errorsdisplayed.isEmpty());
     }
 }
