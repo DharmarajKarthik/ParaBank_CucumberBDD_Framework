@@ -21,7 +21,6 @@ public class RegisterPage extends DriverBasePage {
     WebElement registerLink;
 
 
-
     // WebElements for the registration form fields
     @FindBy(xpath = "//input[@id = 'customer.firstName']")
     WebElement firstName;
@@ -87,5 +86,4 @@ public class RegisterPage extends DriverBasePage {
 
         registerButton.click();
     }
-
 }

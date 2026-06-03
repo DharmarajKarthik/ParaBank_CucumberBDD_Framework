@@ -7,10 +7,10 @@ Feature: User Registration
     And I submit the registration form
     Then I should see a confirmation message
 
-#  @regression @registerationNegative
-#  Scenario: Registration with missing required fields
-#    Given I am on the registration page
-#    When I leave required fields empty
-#    And I submit the registration form
-#    Then I should see error messages for the missing fields
+ @regression @registerationNegative
+Scenario: Registration with missing required fields
+  Given I am on the registration page
+  When I leave required fields empty
+  And I submit the registration form
+  Then I should see error messages for the missing fields
 
