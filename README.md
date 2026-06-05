@@ -1,6 +1,6 @@
 🏦 **ParaBank Cucumber BDD Framework**
 
-A comprehensive **Behavior-Driven Development (BDD)** test automation framework for the ParaBank application using **Cucumber 7**, **Selenium 4**, and **Java 17**.
+A comprehensive **Behavior-Driven Development (BDD)** test automation framework for the ParaBank application using **Cucumber**, **Selenium**, and **Java**.
 
 ---
 
@@ -9,6 +9,7 @@ A comprehensive **Behavior-Driven Development (BDD)** test automation framework 
 This framework demonstrates modern test automation best practices with:
 - **Cucumber/Gherkin** for readable, business-friendly test scenarios
 - **Selenium WebDriver** for robust cross-browser web automation
+- **Selenium Grid** for seamless remote test executions
 - **Page Object Model (POM)** architecture for maintainable test code
 - **Extent Reports** for comprehensive, visual test execution reports
 - **Apache POI** for data-driven testing with Excel files
