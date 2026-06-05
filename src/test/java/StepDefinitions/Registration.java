@@ -8,9 +8,6 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -23,9 +20,9 @@ import static Factory.BaseClass.getProperties;
 
 public class Registration {
 
-    static WebDriver driver;
-    static RegisterPage registerPage;
-    static Properties p;
+    WebDriver driver;
+    RegisterPage registerPage;
+    Properties p;
 
     @Given("I navigate to the registration page")
     public void i_navigate_to_the_registration_page() throws IOException {

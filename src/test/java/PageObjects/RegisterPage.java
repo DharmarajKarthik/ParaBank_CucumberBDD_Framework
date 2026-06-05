@@ -8,11 +8,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RegisterPage extends DriverBasePage {
-    WebDriver driver;
 
     // Constructor to initialize the WebDriver and PageFactory
     public RegisterPage(WebDriver driver) {
-
         super(driver);
     }
 
