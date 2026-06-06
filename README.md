@@ -51,18 +51,19 @@ This framework demonstrates modern test automation best practices with:
 ```
 ParaBank_CucumberBDD_Framework/
 ├── featureFile/                    # Gherkin feature files
-│   └── Registration.feature        # User registration scenarios
+│   └── featurefiles.feature        # User test scenarios
 ├── src/test/java/
 │   ├── Factory/
 │   │   └── BaseClass.java          # WebDriver initialization & utilities
 │   ├── PageObjects/
 │   │   ├── DriverBasePage.java     # Base page class with PageFactory setup
-│   │   └── RegisterPage.java       # Registration page object
+│   │   └── Pageobjectclasses.java  # Page object classes
 │   ├── StepDefinitions/
 │   │   ├── Hooks.java              # Before/After step hooks
-│   │   └── Registration.java       # Registration step definitions
+│   │   └── StepDefs.java           # Step definitions
 │   ├── TestRunner/
-│   │   └── TestRun.java            # JUnit test runner with Cucumber options
+│   │   └── TestRun.java
+│   │   └── MasterRunner.java       # JUnit test runner with Cucumber options
 │   └── utilities/                  # Utility classes (future expansion)
 ├── src/test/resources/
 │   ├── config.properties           # Test configuration (URL, credentials, etc.)
