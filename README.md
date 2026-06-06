@@ -70,6 +70,7 @@ ParaBank_CucumberBDD_Framework/
 ├── target/                         # Build artifacts & test reports
 ├── testData/                       # Test data files (Excel, JSON, etc.)
 ├── testOutput/                     # Test execution output files
+├── logs/                           # Execution event log files
 ├── pom.xml                         # Maven configuration & dependencies
 └── README.md                       # This file
 ```
