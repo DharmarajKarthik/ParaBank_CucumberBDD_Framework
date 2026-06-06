@@ -1,6 +1,6 @@
 🏦 **ParaBank Cucumber BDD Framework**
 
-A comprehensive **Behavior-Driven Development (BDD)** test automation framework for the ParaBank application using **Cucumber 7**, **Selenium 4**, and **Java 17**.
+A comprehensive **Behavior-Driven Development (BDD)** test automation framework for the ParaBank application using **Cucumber**, **Selenium**, and **Java**.
 
 ---
 
@@ -9,6 +9,7 @@ A comprehensive **Behavior-Driven Development (BDD)** test automation framework 
 This framework demonstrates modern test automation best practices with:
 - **Cucumber/Gherkin** for readable, business-friendly test scenarios
 - **Selenium WebDriver** for robust cross-browser web automation
+- **Selenium Grid** for seamless remote test executions
 - **Page Object Model (POM)** architecture for maintainable test code
 - **Extent Reports** for comprehensive, visual test execution reports
 - **Apache POI** for data-driven testing with Excel files
@@ -50,18 +51,19 @@ This framework demonstrates modern test automation best practices with:
 ```
 ParaBank_CucumberBDD_Framework/
 ├── featureFile/                    # Gherkin feature files
-│   └── Registration.feature        # User registration scenarios
+│   └── featurefiles.feature        # User test scenarios
 ├── src/test/java/
 │   ├── Factory/
 │   │   └── BaseClass.java          # WebDriver initialization & utilities
 │   ├── PageObjects/
 │   │   ├── DriverBasePage.java     # Base page class with PageFactory setup
-│   │   └── RegisterPage.java       # Registration page object
+│   │   └── Pageobjectclasses.java  # Page object classes
 │   ├── StepDefinitions/
 │   │   ├── Hooks.java              # Before/After step hooks
-│   │   └── Registration.java       # Registration step definitions
+│   │   └── StepDefs.java           # Step definitions
 │   ├── TestRunner/
-│   │   └── TestRun.java            # JUnit test runner with Cucumber options
+│   │   └── TestRun.java
+│   │   └── MasterRunner.java       # JUnit test runner with Cucumber options
 │   └── utilities/                  # Utility classes (future expansion)
 ├── src/test/resources/
 │   ├── config.properties           # Test configuration (URL, credentials, etc.)
