@@ -63,7 +63,8 @@ public class BaseClass {
                     return null;
             }
 
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities);
+            String gridUrl = p.getProperty("grid.url", "http://localhost:4444/wd/hub");
+            driver = new RemoteWebDriver(new URL(gridUrl), capabilities);
 
         }
         else if(executionEnv.equalsIgnoreCase("local"))
@@ -86,7 +87,7 @@ public class BaseClass {
         }
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 
         return driver;
 
@@ -98,7 +99,10 @@ public class BaseClass {
     }
 
     public static Properties getProperties() throws IOException {
-        FileReader file = new FileReader(new File(System.getProperty("user.dir") + "\\src\\test\\resources\\config.properties"));
+        String configPath = System.getProperty("user.dir")
+                + File.separator + "src" + File.separator + "test"
+                + File.separator + "resources" + File.separator + "config.properties";
+        FileReader file = new FileReader(new File(configPath));
         p = new Properties();
         p.load(file);
         return p;

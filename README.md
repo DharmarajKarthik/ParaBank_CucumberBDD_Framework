@@ -202,13 +202,14 @@ Test execution logs are printed to console and also saved in `target/` directory
 ## 🔧 Configuration
 
 ### config.properties
+
 ```properties
 execution_env=local                               # local or remote
 browser=chrome                                    # chrome, firefox, edge
 os=windows                                        # windows, mac, linux
 appURL=https://parabank.parasoft.com/parabank/   # Target application
 firstname=Dharma                                  # Test data
-...
+...=
 ```
 
 ### Cucumber Options (TestRun.java)

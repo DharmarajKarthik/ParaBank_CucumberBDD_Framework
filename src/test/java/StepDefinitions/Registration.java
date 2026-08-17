@@ -67,7 +67,7 @@ public class Registration {
     public void i_should_see_a_confirmation_message() {
 
         boolean successMessageDisplayed = driver.findElement(By.xpath("//p[contains(text(), 'Your account was created successfully. You are now logged in.')]")).isDisplayed();
-        Assert.assertEquals(successMessageDisplayed, true);
+        Assert.assertTrue(successMessageDisplayed);
     }
 
     @When("I leave registration details empty")

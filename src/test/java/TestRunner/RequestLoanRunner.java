@@ -4,13 +4,13 @@ import org.junit.runner.RunWith;
 
 @RunWith(io.cucumber.junit.Cucumber.class)
 @io.cucumber.junit.CucumberOptions(
-        features = "featureFile/Login.feature",
+        features = "featureFile/RequestLoan.feature",
         glue = "StepDefinitions",
         plugin = {"pretty",
-                "html:target/cucumber-reports/login.html",
+                "html:target/cucumber-reports/request-loan.html",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         publish = true,
         monochrome = true
 )
-public class LoginRunner {
+public class RequestLoanRunner {
 }
